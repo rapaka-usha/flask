@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
- app = Flask(__name__)
+app = Flask(__name__)
  
 # Load Python questions and answers from the text file
 def load_questions():
@@ -29,4 +29,4 @@ def answer_question():
     return render_template('chatbot.html', user_question=user_question, answer=answer)
  
 if __name__ == '__main__':
-    app.run(debug=True)
+   app.run(debug=True)
